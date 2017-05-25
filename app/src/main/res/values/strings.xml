@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YazLab</string>
+    <string name="title_activity_list_screen">ListScreen</string>
+
+    <string-array name="spinnerItems">
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+</resources>

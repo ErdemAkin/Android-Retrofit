@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context=".MainActivity" >
+
+            <ListView
+                android:id="@+id/imageList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <TextView
+                android:id="@+id/evAciklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/aciklamaText"
+                android:layout_alignBottom="@+id/aciklamaText"
+                android:layout_alignLeft="@+id/evFiyat"
+                android:layout_alignStart="@+id/evFiyat"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/evAciklama"
+                android:layout_alignLeft="@+id/evBulKat"
+                android:layout_alignStart="@+id/evBulKat"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evBulKat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/evFiyat"
+                android:layout_alignLeft="@+id/evBinaYasi"
+                android:layout_alignStart="@+id/evBinaYasi"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evBinaYasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/evBulKat"
+                android:layout_alignLeft="@+id/evOdaSayisi"
+                android:layout_alignStart="@+id/evOdaSayisi"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evOdaSayisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/evAlan"
+                android:layout_alignStart="@+id/evAlan"
+                android:layout_below="@+id/evAlan"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evAlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/evEmlakTip"
+                android:layout_alignStart="@+id/evEmlakTip"
+                android:layout_below="@+id/evEmlakTip"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evEmlakTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/evIL"
+                android:layout_alignStart="@+id/evIL"
+                android:layout_below="@+id/evIL"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/evID"
+                android:layout_alignStart="@+id/evID"
+                android:layout_below="@+id/evID"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/evID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ilText"
+                android:layout_centerHorizontal="true"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/aciklamaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fiyatText"
+                android:layout_alignStart="@+id/fiyatText"
+                android:layout_below="@+id/fiyatText"
+                android:text="Açıklama :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="135dp" />
+
+            <TextView
+                android:id="@+id/fiyatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/katText"
+                android:layout_alignStart="@+id/katText"
+                android:layout_below="@+id/katText"
+                android:text="Fiyatı :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+            <TextView
+                android:id="@+id/katText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/yasText"
+                android:layout_alignStart="@+id/yasText"
+                android:layout_below="@+id/yasText"
+                android:text="Bulunduğu Kat :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <TextView
+                android:id="@+id/yasText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ilText"
+                android:layout_alignRight="@+id/ilText"
+                android:layout_below="@+id/odaText"
+                android:text="Binanın Yaşı :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <TextView
+                android:id="@+id/odaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/alanText"
+                android:layout_alignStart="@+id/alanText"
+                android:layout_below="@+id/alanText"
+                android:text="Oda Sayisi :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="67dp" />
+
+            <TextView
+                android:id="@+id/alanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tipText"
+                android:layout_alignStart="@+id/tipText"
+                android:layout_below="@+id/tipText"
+                android:text="Alan :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <TextView
+                android:id="@+id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ilText"
+                android:layout_alignStart="@+id/ilText"
+                android:layout_below="@+id/ilText"
+                android:text="Emlak Tipi :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <TextView
+                android:id="@+id/ilText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/idText"
+                android:layout_alignStart="@+id/idText"
+                android:layout_below="@+id/idText"
+                android:text="Bulunduğu İl :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/idText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="16dp"
+                android:text="ID : "
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:layout_below="@+id/evFiyat"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
